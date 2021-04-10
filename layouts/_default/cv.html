@@ -1,0 +1,13 @@
+{{/* No sidebar, and use site title as page title */}}
+{{ define "body" }}
+<div class="container"><div class="row"><div class="col-12 col-lg-8">
+
+<header>
+  <h1 class="blog-post-title text-dark">{{ .Site.Title | markdownify }}</h1>
+</header>
+<article>
+  {{ .Content }}
+</article>
+
+</div></div></div>
+{{ end }}

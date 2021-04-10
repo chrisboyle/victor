@@ -1,0 +1,9 @@
+<nav id="socials" class="fs-3" aria-label="Ways to contact or interact with me">
+  {{- range $i, $r := getCSV "," "data/socials.csv" -}}
+    {{- if $i -}}<span class="d-none"> | </span>{{- end -}}
+    {{- $title := index $r 0 }}
+    {{- $icon := default ($title | urlize | replaceRE "\\." "-" ) (index $r 1) -}}
+    {{- $isMe := hasPrefix (index $r 2) "https:" -}}
+    <a class="text-reset" {{ if $isMe }} rel="me" {{ end }} href="{{ index $r 2 }}" title="{{ $title }}" aria-label="{{ $title }}"><i class="icon-{{ $icon }}"><span class="d-none">{{ $title }}</span></i></a>
+    {{ end }}
+</nav>

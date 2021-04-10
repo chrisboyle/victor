@@ -1,0 +1,129 @@
+.blog-header, .blog-post, .blog-pagination, .jumbo {
+  margin-bottom: 2rem;
+}
+
+/* Make sure the image size is reasonable. */
+.blog-post img {
+  max-width: 100%;
+}
+
+#topnav {
+  background-color: #aaddee !important;
+}
+#bottomnav {
+  padding-top: 0;
+}
+
+/* Make the active nav highlight full-height */
+/*@media (min-width: 768px) {*/
+  #topnav {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .nav-link {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+/*}
+@media (max-width: 767px) {
+  .navbar-collapse {
+    margin-top: 0.5em;
+  }
+}*/
+.navbar-toggler i {
+  vertical-align: middle;
+}
+
+.nav-link.active {
+  background-color: #8ed2e8;
+}
+
+body {
+  background-color: #bbeeff;
+  padding-top: 2.5rem;
+}
+
+.jumbo {
+  background-color: #8ed2e8;
+  margin-top: -1rem;
+}
+.jumbo .container {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.btn-primary, .page-item.active .page-link {
+  background-color: #428bca;
+}
+.btn-primary {
+  border-color: #428bca;
+}
+
+.badge {
+  font-size: .85em;
+  margin: 0.35em 0.15em 0.25em;
+}
+
+.page-link {
+  border-color: #bbeeff !important;
+}
+.page-link, .page-item.disabled .page-link {
+  border-width: 2px;
+  background-color: #aaddee;
+}
+
+.blog-post header, .blog-main header {
+  margin-bottom: 0.5rem;
+}
+
+.blog-post-date, .blog-post-tags {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 1rem;
+}
+
+.badge {
+  background-color: #aaddee;
+}
+
+blockquote {
+  border-left: 5px solid #aaddee;
+  padding-left: 1rem;
+}
+
+aside section {
+  padding-bottom: 2rem;
+}
+aside section ol {
+  margin-bottom: 0;
+}
+
+@media (max-width: 767px) {
+  #searchform {
+    /*margin-top: 0.5rem;*/
+    display: none;
+  }
+}
+@media (min-width: 768px) {
+  #searchform {
+    margin-left: -1.5em;
+  }
+}
+
+#searchform {
+  min-width: 14em;
+}
+
+#searchbox {
+  border: none;
+  background-color: #def7ff;
+}
+
+#socials a {
+  text-decoration: none;
+}
+
+.highlight pre {
+  padding: 0.3rem 0.5rem;
+  border-radius: 0.4rem;
+}

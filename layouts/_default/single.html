@@ -1,0 +1,15 @@
+{{ define "main" }}
+
+<header>
+    {{ partial "post-title-bigger" . }}
+    {{ partial "post-date" . }}
+    {{ partial "post-tags" . }}
+    {{ partial "post-categories" . }}
+</header>
+<article class="blog-post">
+    {{ .Content }}
+
+    {{ partial "translations.html" . }}
+</article>
+
+{{ end }}

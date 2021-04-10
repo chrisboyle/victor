@@ -1,0 +1,45 @@
+{{- $pag := $.Paginator -}}
+{{- if gt $pag.TotalPages 1 -}}
+<nav class="blog-pagination">
+    <p class="pagination justify-content-center">
+        {{ with $pag.First -}}
+        <span class="page-item">
+            <a class="page-link" href="{{ .URL }}" aria-label="First"><span aria-hidden="true">&laquo;&laquo;</span></a>
+        </span>
+        {{ end }}
+        <span class="page-item {{ if not $pag.HasPrev }}disabled{{ end }}">
+            <a class="page-link" href="{{ if $pag.HasPrev }}{{ $pag.Prev.URL }}{{ else }}#{{ end }}" aria-label="Previous" {{ if not $pag.HasPrev }}tabindex="-1" aria-disabled="true"{{ end }}><span aria-hidden="true">&laquo;</span></a>
+        </span>
+        {{- $.Scratch.Set "__paginator.ellipsed" false -}}
+        {{- range $pag.Pagers -}}
+            {{- $right := sub .TotalPages .PageNumber -}}
+            {{- $showNumber := or (le .PageNumber 3) (eq $right 0) -}}
+            {{- $showNumber := or $showNumber (and (gt .PageNumber (sub $pag.PageNumber 2)) (lt .PageNumber (add $pag.PageNumber 2))) -}}
+            {{- if $showNumber -}}
+                {{ $.Scratch.Set "__paginator.ellipsed" false }}
+                {{ $.Scratch.Set "__paginator.shouldEllipse" false }}
+            {{- else -}}
+                {{ $.Scratch.Set "__paginator.shouldEllipse" (not ($.Scratch.Get "__paginator.ellipsed") ) }}
+                {{ $.Scratch.Set "__paginator.ellipsed" true }}
+            {{- end -}}
+            {{- if $showNumber -}}
+                <span class="page-item {{ if eq . $pag }}active{{ end }}">
+                    <a class="page-link" href="{{ .URL }}">{{ .PageNumber }}</a>
+                </span>
+            {{- else if ($.Scratch.Get "__paginator.shouldEllipse") -}}
+                <span class="page-item disabled">
+                    <span class="page-link" aria-hidden="true">&hellip;</span>
+                </span>
+            {{- end -}}
+        {{- end }}
+        <span class="page-item {{ if not $pag.HasNext }}disabled{{ end }}">
+            <a class="page-link" href="{{ if $pag.HasNext }}{{ $pag.Next.URL }}{{ else }}#{{ end }}" aria-label="Next" {{ if not $pag.HasPrev }}tabindex="-1" aria-disabled="true"{{ end }}><span aria-hidden="true">&raquo;</span></a>
+        </span>
+        {{ with $pag.Last }}
+            <span class="page-item">
+                <a class="page-link" href="{{ .URL }}" aria-label="Last"><span aria-hidden="true">&raquo;&raquo;</span></a>
+            </span>
+        {{- end }}
+    </p>
+</nav>
+{{- end -}}

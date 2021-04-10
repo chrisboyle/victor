@@ -1,0 +1,12 @@
+<section>
+    {{ range $taxonomyname, $taxonomy := .Site.Taxonomies }}
+        {{ if gt (len $taxonomy) 0 }}
+        <h4>{{ i18n $taxonomyname }}</h4>
+        <nav class="taxonomy-{{ $taxonomyname }}">
+            {{- range $name, $value := $taxonomy -}}
+            <a class="btn btn-small badge text-secondary" href="{{ printf "/%s/" $taxonomyname | relLangURL }}{{ $name | urlize }}"><i class="icon-tag"><span class="d-none">&#x1F3F7;</span></i> {{ $name }}</a>
+            {{ end }}
+        </nav>
+        {{ end }}
+    {{ end }}
+</section>
