@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?g56b2b');
-  src:  url('fonts/icomoon.eot?g56b2b#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?g56b2b') format('truetype'),
-    url('fonts/icomoon.woff?g56b2b') format('woff'),
-    url('fonts/icomoon.svg?g56b2b#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?3fjivd');
+  src:  url('fonts/icomoon.eot?3fjivd#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?3fjivd') format('truetype'),
+    url('fonts/icomoon.woff?3fjivd') format('woff'),
+    url('fonts/icomoon.svg?3fjivd#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -28,11 +28,17 @@
 .icon-envelope:before {
   content: "\2709";
 }
+.icon-ubisoft:before {
+  content: "\1f300";
+}
 .icon-googleplay:before {
   content: "\23ef";
 }
 .icon-steam:before {
   content: "\1f3ae";
+}
+.icon-gitlab:before {
+  content: "\1f98a";
 }
 .icon-chevron-up:before {
   content: "\2191";
