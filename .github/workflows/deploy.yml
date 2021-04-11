@@ -1,0 +1,28 @@
+name: Deploy
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-deploy:
+    runs-on: self-hosted
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+      with:
+        submodules: 'recursive'
+
+    - name: Set up Hugo
+      uses: peaceiris/actions-hugo@v2
+      with:
+        hugo-version: '0.68.3'
+        # extended: true
+
+    - name: Build
+      run: hugo --minify
+
+    - name: Deploy
+      run: |
+        rm $HOME/prev-public -rf && mv $HOME/public $HOME/prev-public && mv public $HOME/public
