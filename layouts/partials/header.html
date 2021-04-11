@@ -1,12 +1,13 @@
 <header class="blog-header d-print-none">
-    <nav class="navbar fixed-top navbar-expand navbar-light" id="topnav">
+    <nav class="mynavbar fixed-top navbar-expand-md navbar-light" id="topnav">
         <div class="container">
-            <a class="navbar-brand" href="{{ .Site.BaseURL | relLangURL }}">
-                {{- partial "brand" . -}}
-            </a>
-            <div class="collapse navbar-collapse" id="navbarNav">
-              <div class="col-md-8">
+          <div class="row">
+            <input type="checkbox" id="navbar-togglebox" class="d-none"/>
+            <div class="col-md-8 mynavbar-main">
                 <ul class="navbar-nav">
+                    <li class="navbar-brand" href="{{ .Site.BaseURL | relLangURL }}">
+                        {{- partial "brand" . -}}
+                    </li>
                     {{ $url := .RelPermalink | relLangURL -}}
                     {{- range .Site.Menus.main -}}
                     <li class="nav-item">
@@ -20,6 +21,13 @@
                     </li>
                     {{ end }}
                 </ul>
+                <label for="navbar-togglebox" id="navbar-togglebtn" class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSearch" aria-controls="navbarSearch" aria-label="Toggle search box">
+                    <i class="icon-search toggle-on"></i>
+                    <i class="icon-chevron-up toggle-off"></i>
+                </label>
+            </div>
+            <div class="col-md-3 collapse navbar-collapse" id="navbarSearch">
+                {{ partial "searchbox" }}
                 {{ if gt (len .Site.Home.AllTranslations) 1 }}
                 <ul class="navbar-nav">
                     <li class="nav-item dropdown">
@@ -34,15 +42,8 @@
                     </li>
                 </ul>
                 {{ end }}
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSearch" aria-controls="navbarSearch" aria-expanded="false"
-                    aria-label="Toggle search box">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-              </div>
-              <div class="col-md-3" id="navbarSearch">
-                {{ partial "searchbox" }}
-              </div>
             </div>
+          </div>
         </div>
     </nav>
 </header>
