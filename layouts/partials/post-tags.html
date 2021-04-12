@@ -1,7 +1,7 @@
 {{- if .Params.tags -}}
 <span class="blog-post-tags">
     {{- range .Params.tags }}
-    <a class="btn btn-small badge text-secondary" href="{{ "/tags/" | relLangURL }}{{ . | urlize }}"><i class="icon-tag"><span class="d-none">&#x1F3F7;</span></i> {{ . }}</a>
+    <a class="btn btn-small badge text-secondary" href="{{ "/tags/" | relLangURL }}{{ . | urlize }}"><i class="icon-tag"><span class="d-none">&#x1F3F7;</span></i>&nbsp;{{ . }}</a>
     {{- end }}
 </span>
 {{- end -}}

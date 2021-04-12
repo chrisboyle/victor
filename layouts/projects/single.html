@@ -10,16 +10,16 @@
     {{ if or (.Params.playStore) (.Params.apk) (.Params.download) (.Params.github) }}
       <p>
       {{ if .Params.playStore }}
-        <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id={{ .Params.playStore }}"><i class="icon-googleplay"></i> Get it on Google Play</a>
+        <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id={{ .Params.playStore }}"><i class="icon-googleplay"></i>&nbsp;Get it on Google Play</a>
       {{ end }}
       {{ if .Params.apk }}
-        <a class="btn btn-primary" href="/download/{{ .Params.apk }}"><i class="icon-box-add"></i> APK</a>
+        <a class="btn btn-primary" href="/download/{{ .Params.apk }}"><i class="icon-box-add"></i>&nbsp;APK</a>
       {{ end }}
       {{ if .Params.download }}
-        <a class="btn btn-primary" href="/download/{{ .Params.download }}"><i class="icon-download"></i> Download</a>
+        <a class="btn btn-primary" href="/download/{{ .Params.download }}"><i class="icon-download"></i>&nbsp;Download</a>
       {{ end }}
       {{ if .Params.github }}
-        <a class="btn btn-primary" href="https://github.com/{{ .Params.github }}"><i class="icon-github"></i> GitHub</a>
+        <a class="btn btn-primary" href="https://github.com/{{ .Params.github }}"><i class="icon-github"></i>&nbsp;GitHub</a>
       {{ end }}
       </p>
     {{ end }}
