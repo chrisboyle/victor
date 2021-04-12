@@ -9,4 +9,4 @@ if [ ! -f $BOOTSTRAP_OUT ]; then
   curl --create-dirs -o "$BOOTSTRAP_OUT" "$BOOTSTRAP_IN"
 fi
 
-hugo mod get -u
+#hugo mod get -u
