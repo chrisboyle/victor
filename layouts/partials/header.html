@@ -5,9 +5,9 @@
             <input type="checkbox" id="navbar-togglebox" class="d-none"/>
             <div class="col-md-8 mynavbar-main">
                 <ul class="navbar-nav">
-                    <li class="navbar-brand" href="{{ .Site.BaseURL | relLangURL }}">
+                    <a class="navbar-brand" href="{{ .Site.BaseURL | relLangURL }}">
                         {{- partial "brand" . -}}
-                    </li>
+                    </a>
                     {{ $url := .RelPermalink | relLangURL -}}
                     {{- range .Site.Menus.main -}}
                     <li class="nav-item">
