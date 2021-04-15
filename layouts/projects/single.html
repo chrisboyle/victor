@@ -6,7 +6,7 @@
     {{ partial "post-tags" . }}
     {{ partial "post-categories" . }}
 </header>
-<article class="blog-post">
+<article class="blog-post {{ .Permalink | relURL | anchorize }}">
     {{ if or (.Params.playStore) (.Params.apk) (.Params.download) (.Params.github) }}
       <p>
       {{ if .Params.playStore }}
