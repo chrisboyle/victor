@@ -21,3 +21,5 @@ The problem comes in a behaviour restriction applied to any new update now: [exe
 So even if I give up on having a Cancel button, probably game generation has to come back into a normal Android process (main or [separate](https://developer.android.com/guide/topics/manifest/service-element.html#proc)), which will be a bit fiddly.
 
 New ideas for this would be very welcome. Here's my [Stack Overflow question from 2015](https://stackoverflow.com/q/31440067/6540) about it, still sadly lacking in answers other than my own.
+
+**Update:** I omitted a detail above: I actually ship the executable named as if it's a library (`libpuzzlesgen.so`), in order that the system unpacks it for me into the native library directory, and then I copy it to the data directory. I presumably had a reason at the time not to just execute it from the native library directory, but following a conversation on Facebook, I now see there is widespread advice that you can execute from there. So hopefully I can just do that.
