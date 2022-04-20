@@ -29,12 +29,13 @@ License: [MIT license](https://www.chiark.greenend.org.uk/~sgtatham/puzzles/doc/
 
 [Opt in to testing](https://play.google.com/apps/testing/name.boyle.chris.sgtpuzzles) on Google Play.
 
-There's nothing currently in beta, but if you opt in you will receive beta updates as and when they are published.
+This will give you automatic beta updates as and when they are published. Alternatively you can find beta APKs [on the GitHub releases page](https://github.com/chrisboyle/sgtpuzzles/releases).
 
 ### Requirements to run
 
-- Android 4.1 (Jelly Bean) or higher
-- Permissions: read/write SD for saved games; NFC for Android Beam
+- Android 4.4 (KitKat) or higher in beta
+- Permissions: none! (Load/Save is now handled via the Storage Access Framework only)
+- Pre-2022 versions need 4.1 or higher, SD/storage permission for load/save, and NFC permission for Android Beam.
 
 ### Requirements to compile
 
