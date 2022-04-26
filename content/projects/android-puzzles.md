@@ -3,17 +3,19 @@ title: Simon Tatham's Puzzles on Android
 weight: 1
 tags: [ "android", "c", "java" ]
 playStore: name.boyle.chris.sgtpuzzles
-apk: SGTPuzzles-2019-03-26-0844-68363231.apk
+apk: SGTPuzzles-2022-04-26-0739-c43a34fb.apk
 github: chrisboyle/sgtpuzzles
 description: Simon Tatham's Puzzles, ported to Android. Free, no ads, playable offline. All games are generated on demand with adjustable size and difficulty, so you'll never run out of puzzles.
 ---
 
-This is a port of [Simon Tatham's Portable Puzzle Collection](https://www.chiark.greenend.org.uk/~sgtatham/puzzles/), a collection of 39 single-player logic games. It's free, with no ads, and is playable offline. All games are generated on demand with adjustable size and difficulty, so you'll never run out of puzzles.
+This is a port of [Simon Tatham's Portable Puzzle Collection](https://www.chiark.greenend.org.uk/~sgtatham/puzzles/), a collection of 40 single-player logic games. It's free, with no ads, and is playable offline. All games are generated on demand with adjustable size and difficulty, so you'll never run out of puzzles.
 
 <!--more-->
 
-[![Screenshot of list of puzzles, part 1](/images/puzzles-list-1.png)](/images/puzzles-list-1.png)
-[![Screenshot of list of puzzles, part 2](/images/puzzles-list-2.png)](/images/puzzles-list-2.png)
+[![Screenshot of Net](/images/01_net_1650995906116.png)](/images/01_net_1650995906116.png)
+[![Screenshot of Solo](/images/02_solo_1650995906441.png)](/images/02_solo_1650995906441.png)
+[![Screenshot of Mosaic](/images/03_mosaic_1650995906773.png)](/images/03_mosaic_1650995906773.png)
+[![Screenshot of game chooser](/images/08_chooser_grid_1650995905261.png)](/images/08_chooser_grid_1650995905261.png)
 
 I first played this collection on PalmOS, and enjoyed it so much that when I got the first Android phone in 2008, I ported it to Android so I could keep playing. You can't quite still use that first phone to play it, but I do try to keep the requirements as low as I can.
 
