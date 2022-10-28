@@ -4,7 +4,7 @@ unlisted: true
 ---
 
 #### Content
-- © 2010-2021 Chris Boyle
+- © 2010-2022 Chris Boyle
 
 #### Site generator
 - [Hugo](https://gohugo.io/)

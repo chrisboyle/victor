@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?3fjivd');
-  src:  url('fonts/icomoon.eot?3fjivd#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?3fjivd') format('truetype'),
-    url('fonts/icomoon.woff?3fjivd') format('woff'),
-    url('fonts/icomoon.svg?3fjivd#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?fcde0c');
+  src:  url('fonts/icomoon.eot?fcde0c#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?fcde0c') format('truetype'),
+    url('fonts/icomoon.woff?fcde0c') format('woff'),
+    url('fonts/icomoon.svg?fcde0c#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -27,6 +27,9 @@
 
 .icon-envelope:before {
   content: "\2709";
+}
+.icon-mastodon:before {
+  content: "\e900";
 }
 .icon-ubisoft:before {
   content: "\1f300";

@@ -3,3 +3,4 @@ public
 resources/_gen
 *~
 *.swp
+.hugo_build.lock
