@@ -1,7 +1,7 @@
 ---
 title: Passwordless disk encryption on Linux
 date: 2020-10-16
-tags: [ "security" ]
+tags: [ "boot", "security" ]
 ---
 
 My Linux installation is encrypted but boots without a password. Here's how that works.
