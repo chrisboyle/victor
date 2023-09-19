@@ -1,4 +1,4 @@
-<nav id="socials" class="fs-3" aria-label="Ways to contact or interact with me">
+<nav id="me-elsewhere" class="fs-3" aria-label="Ways to contact or interact with me">
   {{- range $i, $r := getCSV "," "data/socials.csv" -}}
     {{- if $i -}}<span class="d-none"> | </span>{{- end -}}
     {{- $title := index $r 0 }}
