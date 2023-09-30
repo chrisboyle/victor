@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?9b8bv3');
-  src:  url('fonts/icomoon.eot?9b8bv3#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?9b8bv3') format('truetype'),
-    url('fonts/icomoon.woff?9b8bv3') format('woff'),
-    url('fonts/icomoon.svg?9b8bv3#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?4838ia');
+  src:  url('fonts/icomoon.eot?4838ia#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?4838ia') format('truetype'),
+    url('fonts/icomoon.woff?4838ia') format('woff'),
+    url('fonts/icomoon.svg?4838ia#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -85,14 +85,8 @@
 .icon-envelope:before {
   content: "\2709";
 }
-.icon-ubisoft:before {
-  content: "\1f300";
-}
-.icon-googleplay:before {
-  content: "\23ef";
-}
-.icon-steam:before {
-  content: "\1f3ae";
+.icon-tiktok:before {
+  content: "\e902";
 }
 .icon-mastodon:before {
   content: "\e900";
