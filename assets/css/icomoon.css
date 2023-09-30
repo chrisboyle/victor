@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?fcde0c');
-  src:  url('fonts/icomoon.eot?fcde0c#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?fcde0c') format('truetype'),
-    url('fonts/icomoon.woff?fcde0c') format('woff'),
-    url('fonts/icomoon.svg?fcde0c#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?9b8bv3');
+  src:  url('fonts/icomoon.eot?9b8bv3#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?9b8bv3') format('truetype'),
+    url('fonts/icomoon.woff?9b8bv3') format('woff'),
+    url('fonts/icomoon.svg?9b8bv3#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,32 +25,8 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-envelope:before {
-  content: "\2709";
-}
-.icon-mastodon:before {
-  content: "\e900";
-}
-.icon-ubisoft:before {
-  content: "\1f300";
-}
-.icon-googleplay:before {
-  content: "\23ef";
-}
-.icon-steam:before {
-  content: "\1f3ae";
-}
-.icon-gitlab:before {
-  content: "\1f98a";
-}
-.icon-chevron-up:before {
-  content: "\2191";
-}
-.icon-facebook:before {
-  content: "\1f135";
-}
-.icon-stack-overflow:before {
-  content: "\1f95e";
+.icon-at:before {
+  content: "\e901";
 }
 .icon-tag:before {
   content: "\1f3f7";
@@ -88,6 +64,9 @@
 .icon-twitch:before {
   content: "\1f579";
 }
+.icon-onedrive:before {
+  content: "\eaaf";
+}
 .icon-github:before {
   content: "\1f419";
 }
@@ -102,4 +81,40 @@
 }
 .icon-paypal:before {
   content: "\1f4b8";
+}
+.icon-envelope:before {
+  content: "\2709";
+}
+.icon-ubisoft:before {
+  content: "\1f300";
+}
+.icon-googleplay:before {
+  content: "\23ef";
+}
+.icon-steam:before {
+  content: "\1f3ae";
+}
+.icon-mastodon:before {
+  content: "\e900";
+}
+.icon-ubisoft:before {
+  content: "\1f300";
+}
+.icon-googleplay:before {
+  content: "\23ef";
+}
+.icon-steam:before {
+  content: "\1f3ae";
+}
+.icon-gitlab:before {
+  content: "\1f98a";
+}
+.icon-chevron-up:before {
+  content: "\2191";
+}
+.icon-facebook:before {
+  content: "\1f135";
+}
+.icon-stack-overflow:before {
+  content: "\1f95e";
 }
