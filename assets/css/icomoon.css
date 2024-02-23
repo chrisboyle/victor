@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?4838ia');
-  src:  url('fonts/icomoon.eot?4838ia#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?4838ia') format('truetype'),
-    url('fonts/icomoon.woff?4838ia') format('woff'),
-    url('fonts/icomoon.svg?4838ia#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?sn6ee0');
+  src:  url('fonts/icomoon.eot?sn6ee0#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?sn6ee0') format('truetype'),
+    url('fonts/icomoon.woff?sn6ee0') format('woff'),
+    url('fonts/icomoon.svg?sn6ee0#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,8 +25,35 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-at:before {
+.icon-tiktok:before {
+  content: "\e902";
+}
+.icon-mastodon:before {
+  content: "\e900";
+}
+.icon-ubisoft:before {
+  content: "\1f300";
+}
+.icon-googleplay:before {
+  content: "\23ef";
+}
+.icon-steam:before {
+  content: "\1f3ae";
+}
+.icon-bluesky:before {
   content: "\e901";
+}
+.icon-gitlab:before {
+  content: "\1f98a";
+}
+.icon-chevron-up:before {
+  content: "\2191";
+}
+.icon-facebook:before {
+  content: "\1f135";
+}
+.icon-stack-overflow:before {
+  content: "\1f95e";
 }
 .icon-tag:before {
   content: "\1f3f7";
@@ -84,31 +111,4 @@
 }
 .icon-envelope:before {
   content: "\2709";
-}
-.icon-tiktok:before {
-  content: "\e902";
-}
-.icon-mastodon:before {
-  content: "\e900";
-}
-.icon-ubisoft:before {
-  content: "\1f300";
-}
-.icon-googleplay:before {
-  content: "\23ef";
-}
-.icon-steam:before {
-  content: "\1f3ae";
-}
-.icon-gitlab:before {
-  content: "\1f98a";
-}
-.icon-chevron-up:before {
-  content: "\2191";
-}
-.icon-facebook:before {
-  content: "\1f135";
-}
-.icon-stack-overflow:before {
-  content: "\1f95e";
 }
