@@ -3,7 +3,7 @@ title: Simon Tatham's Puzzles on Android
 weight: 1
 tags: [ "android", "c", "java" ]
 playStore: name.boyle.chris.sgtpuzzles
-apk: SGTPuzzles-2024-03-10-2312-80aac310.apk
+apk: SGTPuzzles-2024-03-29-2245-fd304c53.apk
 github: chrisboyle/sgtpuzzles
 description: Simon Tatham's Puzzles, ported to Android. Free, no ads, playable offline. All games are generated on demand with adjustable size and difficulty, so you'll never run out of puzzles.
 ---
