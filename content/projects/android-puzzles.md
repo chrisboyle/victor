@@ -35,9 +35,8 @@ This will give you automatic beta updates as and when they are published. Altern
 
 ### Requirements to run
 
-- Android 4.4 (KitKat) or higher
-- Permissions: none! (Load/Save is now handled via the Storage Access Framework only)
-- Pre-2022 versions need 4.1 or higher, SD/storage permission for load/save, and NFC permission for Android Beam.
+- Android 5.0 (Lollipop) or higher
+- Permissions: none!
 
 ### Requirements to compile
 
