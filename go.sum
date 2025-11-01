@@ -4,3 +4,5 @@ github.com/chrisboyle/victor-private v0.0.0-20231106115146-d4572a6cae73 h1:lyf68
 github.com/chrisboyle/victor-private v0.0.0-20231106115146-d4572a6cae73/go.mod h1:V/eOsfiZGOiWvon1S8tsbrybHGezVTMgs+s0OREeL6A=
 github.com/chrisboyle/victor-private v0.0.0-20240210191650-cb4692aa174e h1:HNphzrr3pm4Y6yUrgEiTeKqIjoRu1E5Bu/D4bvx5Fqo=
 github.com/chrisboyle/victor-private v0.0.0-20240210191650-cb4692aa174e/go.mod h1:V/eOsfiZGOiWvon1S8tsbrybHGezVTMgs+s0OREeL6A=
+github.com/chrisboyle/victor-private v0.0.0-20251101205053-41177dd84d46 h1:5zs9Bt5/fuzTNcVt4SgW5xdN2E36ffGj9tkNXyKB+i8=
+github.com/chrisboyle/victor-private v0.0.0-20251101205053-41177dd84d46/go.mod h1:V/eOsfiZGOiWvon1S8tsbrybHGezVTMgs+s0OREeL6A=
